@@ -1,0 +1,14 @@
+/* Empty. Add your own CSS if you like */
+a {
+	color:white; 
+	text-decoration:none;
+}
+
+.owner {
+
+	opacity: 0.7;
+}
+
+.date {
+	float: right;
+}

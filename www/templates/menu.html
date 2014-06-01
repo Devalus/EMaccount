@@ -1,0 +1,36 @@
+<ion-side-menus>
+  <!--drag-content="false"-->
+  <ion-pane ion-side-menu-content>
+    <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+      <ion-nav-back-button class="button-clear"><i class="icon ion-chevron-left"></i> Back</ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent" animation="slide-right-left"></ion-nav-view>
+  </ion-pane>
+
+  <ion-side-menu side="right">
+    <header class="bar bar-header bar-balanced">
+      <h1 class="title">EasyMatch</h1>
+    </header>
+    <ion-content class="has-header">
+      <ion-list>
+        <ion-item nav-clear menu-close href="#/app/home">
+        <i class="icon ion-home" padding-left="30px"></i>
+          Home
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/new">
+        <i class="icon ion-plus-round"></i>
+          New game
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/games">
+        <i class="icon ion-search"></i>
+          Games
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/account">
+        <i class="icon ion-person"></i>
+          Account
+        </ion-item>
+        
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

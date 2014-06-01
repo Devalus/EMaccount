@@ -1,0 +1,40 @@
+<ion-view title="New Game">
+<ion-nav-buttons side="right">
+    <button menu-toggle="right" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <!--<ion-content padding="true">-->
+	<ion-content>
+	<form ng-submit="addGame()">
+	  <label class="item item-input">
+	    <input type="text" placeholder="Name" ng-model="newGame.name">
+	  </label>
+	  <label class="item item-input" >
+	    <input type="text" placeholder="Owner" ng-model="newGame.owner">
+	  </label>
+
+	  <label class="item item-input item-select">
+	    <div class="input-label">
+	      Sport
+	    </div>
+	    <select ng-model="newGame.sport">
+	      <option selected>Football</option>
+	      <option>Jogging</option>
+	      <option>Basketball</option>
+	      <option>Biking</option>
+	      <option>Tenis</option>
+	    </select>
+	  </label>
+	  
+	  <label class="item item-input">
+  		<span class="input-label">Date</span>
+  		<input type="date" ng-model="newGame.date">
+	  </label>
+	  <!--<a href="#/app/games">-->
+	  	<button type="submit" class="button button-block button-balanced">Create Game</button>
+	  	<button class="button button-block button-assertive"> Cancel </button>
+	  <!--</a>-->
+	  <pre>games={{games}}</pre>
+	 </form>
+	</ion-content>  
+  <!--</ion-content>-->
+</ion-view>

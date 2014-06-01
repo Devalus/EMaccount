@@ -1,0 +1,28 @@
+<ion-view title="Account">
+  <ion-nav-buttons side="right">
+    <button menu-toggle="right" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+    <h1>Account</h1>
+
+     <ion-list>
+      <ion-item>
+    <ion-item>Nom : {{user.name}}</ion-item>
+    <ion-item>Adresse : {{user.address}}</ion-item>
+    <ion-item>Rayon : {{user.rayon}}</ion-item>
+    <form>
+    	<label class="item item-input" >
+	    <input type="text" placeholder="Nouvelle adresse">
+	  </label>
+    <label class="item item-input" >
+	    <input type="text" placeholder="Nouveau rayon">
+	  </label>
+    <ion-item>
+	  <button type="submit" class="button button-medium button-balanced">Sauvegarder</button>
+	  	<button class="button button-medium button-assertive"> Annuler </button>
+    </ion-item>
+	</form>
+	</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
