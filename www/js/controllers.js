@@ -6,9 +6,9 @@ angular.module('starter.controllers', [])
 .controller('GamesCtrl', function($scope, MyGames) {
   $scope.games = MyGames.getAllGames();
   $scope.newGame = {};
-  $scope.addGame = function() {
+  /*$scope.addGame = function() {
 		$scope.games.push($scope.newGame);
-  };
+  };*/
 })
 
 .controller('GameCtrl', function($scope, $stateParams, $filter, MyGames) {
